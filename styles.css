@@ -7,10 +7,7 @@
     --GreyHard: hsl(0, 0%, 8%); 
     --FontSizeP: 14px;
 }
-@font-face {
-    font-family: Inter;
-    src: url("/assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
-}
+
 
 *
 {
