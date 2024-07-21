@@ -1,0 +1,124 @@
+:root
+{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --GreyLight: hsl(0, 0%, 20%); 
+    --GreyMedium: hsl(0, 0%, 12%); 
+    --GreyHard: hsl(0, 0%, 8%); 
+    --FontSizeP: 14px;
+}
+@font-face {
+    font-family: Inter;
+    src: url("/assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: black;
+    font-family: "Inter";
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-container
+{
+    min-width: 375px;
+    background-color: var(--GreyMedium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.profile-container img
+{
+    width: 30%;
+    border: none;
+    border-radius: 50%;
+    height: auto;
+    display: block;
+}
+
+.profile-container .info
+{
+    padding: 1rem 0rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container .info .name
+{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--White);
+}
+.profile-container .info .location
+{
+    color: var(--Green);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.profile-container .info .bio
+{
+    padding-top: 1rem;
+    color: var(--White);
+}
+
+.profile-container .links
+{
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container .links .link-btn
+{
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--GreyLight);
+    color: var(--White);
+    font-weight: 600;
+}
+
+.profile-container .links .link-btn:hover
+{
+    font-weight: 700;
+    background-color: var(--Green);
+    color: black;
+    cursor: pointer;   
+}
+
+.attribution
+{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+    gap: 0.5rem;
+}
+
+.attribution a
+{
+    color: var(--Green);
+    text-decoration: none;
+}
